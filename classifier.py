@@ -9,6 +9,8 @@ NUM_CLASSES = len(dataset.CLASSES)
 IMAGE_SIZE = 100
 
 # Placeholder-like Input
+#used chat gpt and https://github.com/aparande/Fruit-Classification
+#to train the model and also used it to implement the dataset from kaggle into the training model
 def get_dataset_inputs(batch_size):
     images_placeholder = tf.keras.Input(shape=(IMAGE_SIZE, IMAGE_SIZE, 3), name="images")
     labels_placeholder = tf.keras.Input(shape=(), dtype=tf.int32, name="labels")
